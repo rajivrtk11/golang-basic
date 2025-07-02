@@ -1,0 +1,8 @@
+// Things need to learn to write code and make contribution
+1. See how interface works in go => done
+2. See how to work with database and save the data into it. => done
+3. See how the implementation of interface is done Revise interface again. => from chat gpt
+4. See how grpc works 
+5. sleep. 6pm-7pm
+
+Analyze this image step by step. Go and understand the question first and give me the java solution. Also cover all the possible edge cases 

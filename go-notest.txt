@@ -1,0 +1,41 @@
+// start command
+go run . start 
+
+// proto generation command 
+buf generate proto
+
+// How to add the service inside the portal.proto
+1. Add the grpc service inside that with the request and input that you want
+2. Run the command 
+    buf generate proto
+3 Start writing controller
+4. Creating table organizations_keyword and saving keyword in that table
+    organizations_keyword
+
+    id uuid DEFAULT public.uuid_generate_v4() NOT NULL PRIMARY KEY,
+    keyword varchar(255) NOT NULL,
+--     organization_id uuid NOT NULL,
+    created_at timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    updated_at  timestamp
+
+
+
+// query
+1. Why to add the Reddit in commented keyword and execute query
+2. Why to add the migration script.
+3. 
+
+err := stmt.GetContext(ctx, &id, map[string]interface{}{
+		"keyword":    organizationsKeyword.Keyword,
+		"created_at": organizationsKeyword.CreatedAt,
+		"updated_at": organizationsKeyword.UpdatedAt,
+		//"organization_id": organizationsKeyword.OrgID,
+	})
+
+
+organizations_keyword => keyword
+
+Organisation insert command 
+INSERT INTO organizations (name) VALUES ('DootaAI'');
+
+

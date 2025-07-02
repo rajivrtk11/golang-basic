@@ -1,0 +1,3 @@
+Description is getting very long in various cases => Even 5000 chars is less.
+Our api is working for => r/technology/new/ url for filters have to check.
+If making frequent request getting error 429 from reddit.
